@@ -1,0 +1,21 @@
+/*user data form*/
+
+.formbox {
+    border: 1px solid black;
+    margin: 0 auto;
+    height: 50%;
+    width: 30%;
+    padding: 50px;
+    background-color: #bbb;
+}
+
+div {
+    margin-top: 200px;
+}
+
+
+/* otp container form*/
+
+.msgbox {
+    display: none;
+}
