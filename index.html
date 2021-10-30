@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="\CSSstyle.css" rel="stylesheet">
+    <script src="Javascript\script.js"></script>
+</head>
+
+<body onload="return validate()">
+    <div>
+        <!--for for user data-->
+        <form action="" name="myform" onsubmit=" generateOTP(); return false" class="formbox">
+            <!--full name-->
+            <label for="fname">Full name</label><br>
+            <input type="text" name="fname" id="fname" onkeyup="return fnamevld()" required>
+            <br><br>
+            <!--email -->
+            <label for=" email ">Email</label><br>
+            <input type="email" id="email " name="email " required>
+            <br><br>
+            <!--phone no-->
+            <label for="phoneno">Phone number</label><br>
+            <input type="tel" name="phoneno" id="phoneno" onkeyup=" return phonevald()" required>&nbsp;&nbsp;
+
+            <!--container for mobile provider--><span id="company"></span> &nbsp; &nbsp; &nbsp;
+            <!--container for state--><span id="state"></span>
+            <br><br>
+            <!--submit btton-->
+            <input type="submit" onclick="" id="submit">
+        </form>
+        <!--otp insert form-->
+        <form action="" class="formbox msgbox" id="msgbox" onsubmit="return false;">
+            Dear <strong><span id="name1"> </span></strong>,<br> Thank you for your inquiry. A 4 digit verification number has been sent to your phone number:<strong><span id="phone1"></span> </strong>, please enter in the following box and submit for
+            confirmation
+            <br><br>
+            <!--otp container-->
+            <input type="text" name="otpbox" id="otpbox">
+            <!-- validate button-->
+            <button id="validate" onclick=" return rdipage()">Validate</button>
+        </form>
+    </div>
+</body>
+
+</html>
